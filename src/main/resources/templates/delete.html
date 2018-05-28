@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<span th:text="${redirectTest}"></span>
-delete
+<h1 th:errors="${user.name}" th:if="${user!=null}"></h1>
+
 </body>
 </html>

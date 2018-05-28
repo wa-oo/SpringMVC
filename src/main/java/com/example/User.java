@@ -1,8 +1,18 @@
 package com.example;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.validation.annotation.Validated;
+
+
 public class User {
+	
+	@NotEmpty(message="名称不能为空")
 	private String name;
+	
 	private int age;
+	
+	
 	private String phone;
 	
 	public String getName() {
